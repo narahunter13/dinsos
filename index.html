@@ -119,7 +119,7 @@
       aria-labelledby="dinsos-modal-label"
       aria-hidden="true"
     >
-      <div class="modal-dialog">
+      <div style="max-width: 40%;" class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
             <h1 class="modal-title text-body fs-5" id="dinsos-modal-label">
@@ -133,14 +133,92 @@
             ></button>
           </div>
           <div class="modal-body text-body shadow-none">
-            <div style="display: flex; justify-content: space-between; margin-right: 1rem;">
-              <div style="text-align: left;">
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                margin-right: 1rem;
+              "
+            >
+              <div style="text-align: left">
                 <p style="margin-bottom: 0"><strong>Judul:</strong></p>
-                <p>Laporan Pengelolaan DTKS dan Data Bantuan Sosial Tahun 2023</p>
+                <p>
+                  Laporan Pengelolaan DTKS dan Data Bantuan Sosial Tahun 2023
+                </p>
                 <p style="margin-bottom: 0"><strong>Jadwal Rilis:</strong></p>
                 <p>29 Desember 2023</p>
+                <p style="margin-bottom: 0"><strong>Periode Terbit:</strong></p>
+                <p>Tahunan</p>
+                <p style="margin-bottom: 0"><strong>Bahasa:</strong></p>
+                <p>Bahasa Indonesia</p>
+                <p style="margin-bottom: 0"><strong>Status:</strong></p>
+                <p><span class="badge text-bg-success">Rilis</span></p>
               </div>
-              <img style="height: 12rem;" src="Laporan Pengelolaan DTKS dan Data Bansos.png" alt="Publikasi">
+              <img
+                style="height: 16rem"
+                src="Laporan Pengelolaan DTKS dan Data Bansos.png"
+                alt="Publikasi"
+              />
+            </div>
+          </div>
+          <div class="modal-footer">
+            <a
+              href="Laporan Pengelolaan DTKS dan Data Bansos.pdf"
+              class="btn btn-primary"
+            >
+              Download Publikasi
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="dinsos-analisis"
+      tabindex="-1"
+      aria-labelledby="dinsos-modal-label"
+      aria-hidden="true"
+    >
+      <div style="max-width: 40%;" class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title text-body fs-5" id="dinsos-analisis-label">
+              Dinas Sosial Kota Lubuk Linggau
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-body shadow-none">
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                margin-right: 1rem;
+              "
+            >
+              <div style="text-align: left">
+                <p style="margin-bottom: 0"><strong>Judul:</strong></p>
+                <p>
+                  Analisis Hasil Pendataan DTKS Kota Lubuk Linggau Tahun 2023
+                </p>
+                <p style="margin-bottom: 0"><strong>Jadwal Rilis:</strong></p>
+                <p>29 Desember 2023</p>
+                <p style="margin-bottom: 0"><strong>Periode Terbit:</strong></p>
+                <p>Tahunan</p>
+                <p style="margin-bottom: 0"><strong>Bahasa:</strong></p>
+                <p>Bahasa Indonesia</p>
+                <p style="margin-bottom: 0"><strong>Status:</strong></p>
+                <p><span class="badge text-bg-success">Rilis</span></p>
+              </div>
+              <img
+                style="height: 16rem"
+                src="Analisis Hasil Pendataan DTKS.jpg"
+                alt="Publikasi"
+              />
             </div>
           </div>
           <div class="modal-footer">
@@ -182,16 +260,22 @@
           Dinas Sosial Kota Lubuk Linggau memiliki visi untuk mewujudkan
           pelayanan kesejahteraan sosial yang adil, cepat, dan berkualitas
         </p>
-        <p class="lead">
-          <button
-            type="button"
-            data-bs-toggle="modal"
-            data-bs-target="#dinsos-modal"
-            class="btn btn-lg btn-light fw-bold border-white bg-white"
-          >
-            Lihat Laporan DTKS dan Bansos
-          </button>
-        </p>
+        <button
+          type="button"
+          data-bs-toggle="modal"
+          data-bs-target="#dinsos-modal"
+          class="btn btn-lg btn-light fw-bold border-white bg-white"
+        >
+          Lihat Laporan DTKS dan Bansos
+        </button>
+        <button
+          type="button"
+          data-bs-toggle="modal"
+          data-bs-target="#dinsos-analisis"
+          class="btn btn-lg btn-light fw-bold border-white bg-white mt-3"
+        >
+          Lihat Analisis Hasil Pendataan DTKS
+        </button>
       </main>
 
       <footer class="mt-auto text-white-50"></footer>
