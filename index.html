@@ -8,11 +8,11 @@
     />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Website Dinas Sosial Kota Lubuk Linggau" />
     <meta
-      name="author"
-      content=""
+      name="description"
+      content="Website Dinas Sosial Kota Lubuk Linggau"
     />
+    <meta name="author" content="BPS Kota Lubuk Linggau" />
     <meta name="generator" content="Hugo 0.122.0" />
     <title>Dinsos | Dinas Sosial Kota Lubuk Linggau</title>
 
@@ -112,6 +112,48 @@
     <link href="cover.css" rel="stylesheet" />
   </head>
   <body class="d-flex h-100 text-center text-bg-dark">
+    <div
+      class="modal fade"
+      id="dinsos-modal"
+      tabindex="-1"
+      aria-labelledby="dinsos-modal-label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title text-body fs-5" id="dinsos-modal-label">
+              Dinas Sosial Kota Lubuk Linggau
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-body shadow-none">
+            <div style="display: flex; justify-content: space-between; margin-right: 1rem;">
+              <div style="text-align: left;">
+                <p style="margin-bottom: 0"><strong>Judul:</strong></p>
+                <p>Laporan Pengelolaan DTKS dan Data Bantuan Sosial Tahun 2023</p>
+                <p style="margin-bottom: 0"><strong>Jadwal Rilis:</strong></p>
+                <p>29 Desember 2023</p>
+              </div>
+              <img style="height: 12rem;" src="Laporan Pengelolaan DTKS dan Data Bansos.png" alt="Publikasi">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <a
+              href="Laporan Pengelolaan DTKS dan Data Bansos.pdf"
+              class="btn btn-primary"
+            >
+              Download Publikasi
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
       <header class="mb-auto">
         <div>
@@ -141,11 +183,14 @@
           pelayanan kesejahteraan sosial yang adil, cepat, dan berkualitas
         </p>
         <p class="lead">
-          <a
-            href="Laporan Pengelolaan DTKS dan Data Bansos.pdf"
+          <button
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#dinsos-modal"
             class="btn btn-lg btn-light fw-bold border-white bg-white"
-            >Download Laporan DTKS dan Bansos</a
           >
+            Lihat Laporan DTKS dan Bansos
+          </button>
         </p>
       </main>
 
